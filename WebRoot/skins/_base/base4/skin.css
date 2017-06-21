@@ -967,11 +967,11 @@ div.ImgLoader-view {
 }
 
 /* Custom spacing between cells in mail attachment container */
-.ZmMailAttachmentsTable > TBODY > TR > TD {
+.ZmAttachmentsTable > TBODY > TR > TD {
     padding-left: @MailViewGutterSpace@
 }
 
-.ZmMailAttachmentsTable > TBODY > TR > TD:first-of-type {
+.ZmAttachmentsTable > TBODY > TR > TD:first-of-type {
     padding-left: 0;
 }
 
@@ -1065,4 +1065,42 @@ div.ZmHtmlEditor .TxtAreaDrag {
 .ZmConvDoublePaneView .Row-selected .ZmListFlagsWrapper,
 .ZmConvDoublePaneView .Row-selected .ZmMsgListDate {
     background-color: @ListItemBgColor-selected@ !important;
+}
+
+/*Circular Progress bar styling*/
+svg.progress-circle {
+	@FullWidth@
+}
+
+svg.progress-circle text {
+	fill: @TxtC@;
+}
+
+svg.progress-circle circle.bg {
+	stroke: #e5e5e5;
+}
+
+svg.progress-circle circle.progress {
+	stroke:@AltC@;
+	transition: stroke-dashoffset .5s ease-out;
+}
+
+svg.progress-circle.tick-inside {
+	fill:@AltC@;
+}
+
+.Row-selected svg.progress-circle .bg {
+	stroke:@hexToRGBA(white, 30)@;
+}
+
+.Row-selected svg.progress-circle .progress {
+	stroke:@white@;
+}
+
+.Row-selected svg.progress-circle text {
+	fill: @white@;
+}
+
+.Row-selected  svg.progress-circle.tick-inside {
+	fill:@white@;
 }
