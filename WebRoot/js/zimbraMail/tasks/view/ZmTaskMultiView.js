@@ -114,7 +114,7 @@ function() {
     if(readingPaneEnabled) {
         this.condClassName(readingPaneOnRight, "ZmReadingPaneRight", "ZmReadingPaneBottom");
     } else {
-        ["ZmReadingPaneRight", "ZmReadingPaneBottom"].map(function(cls) {
+        ["ZmReadingPaneRight", "ZmReadingPaneBottom"].forEach(function(cls) {
             this.delClassName(cls);
         }.bind(this));
     }

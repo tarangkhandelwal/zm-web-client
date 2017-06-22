@@ -184,7 +184,7 @@ ZmTaskView.prototype._setTags = function() {
  * @param html
  */
 ZmTaskView.prototype._setTagsHtml = function(html) {
-	var tagCell = document.getElementById(this._tagCellId);
+	var tagCell = Dwt.byId(this._tagCellId);
 	if (!tagCell) { return; }
 	tagCell.innerHTML = html;
 };
