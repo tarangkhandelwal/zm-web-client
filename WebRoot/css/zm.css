@@ -2212,7 +2212,6 @@ div.CompDragArea * {
 	@TaskHeaderImageWrapper@
 }
 
-.ZmTaskHeaderImage IMG,
 .ZmTaskHeaderImage .svg-icon,
 .ZmTaskHeaderImage .progress-circle {
 	@TaskHeaderImage@
@@ -2250,7 +2249,7 @@ div.CompDragArea * {
 
 /* Task info/exception style */
 .ZmTaskInfoView .ZmTaskInfo:not(:empty) {
-	@ContactInfo@
+	@TaskInfo@
 }
 
 .ZmContactInfo > TABLE {

@@ -111,7 +111,7 @@ function(calItem) {
 		folderLabel: ZmMsg.folder,
         isTask:true,
         _infoBarId:this._infoBarId,
-		task:calItem
+        task:calItem
 	};
 };
 

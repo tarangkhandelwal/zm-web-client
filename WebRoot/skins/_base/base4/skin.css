@@ -1077,16 +1077,16 @@ svg.progress-circle text {
 }
 
 svg.progress-circle circle.bg {
-	stroke: #e5e5e5;
+	stroke:@CircularProgressBarBg@;
 }
 
 svg.progress-circle circle.progress {
-	stroke:@AltC@;
+	stroke:@CircularProgressBarActiveBg@;
 	transition: stroke-dashoffset .5s ease-out;
 }
 
 svg.progress-circle.tick-inside {
-	fill:@AltC@;
+	fill:@CircularProgressBarActiveBg@;
 }
 
 .Row-selected svg.progress-circle .bg {
